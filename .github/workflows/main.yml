@@ -15,8 +15,8 @@ jobs:
           --health-timeout 5s
           --health-retries 5
     steps:
-      - name: flyway
-        uses: joshuaavalon/flyway-action@test
+      - uses: actions/checkout@v2
+      - uses: joshuaavalon/flyway-action@master
         with:
           url: jdbc:postgresql://postgres:5432/postgres
           user: postgres
