@@ -16,7 +16,7 @@ jobs:
           --health-retries 5
     steps:
       - name: flyway
-        uses: joshuaavalon/flyway-action@master
+        uses: joshuaavalon/flyway-action@test
         with:
           url: jdbc:postgresql://postgres:5432/postgres
           user: postgres
